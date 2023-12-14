@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;1,6..12,300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.body {
+  background: white;
+  height: 100%;
+
+}
+
+@layer components {
+  .input-field {
+    @apply mt-1  block w-full py-1.5 px-2 shadow-sm border rounded-2xl border-gray-200  focus:border-purple-600 sm:text-sm
+  }
+
+  .submit-btn {
+    @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 md:order-1
+  }
+
+}
